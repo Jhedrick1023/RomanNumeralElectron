@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+    <title>Roman Numerals</title>
+    <script type="text/javascript" src="../Javascripts/index.js"></script>
+</head>
+<body style="background-color:orange;width:99%;height:85%">
+    <h2 style="background-color:orange; color:ghostwhite;">Roman Numeral Generator</h2>
+    <p style="background-color:orange;width:100%;height:50%;">
+        <input type="number" min="1" max="100" id="number" required />
+        <button style="background-color:white;color:black;" type="submit" onclick="generateNumeral()">Generate</button>
+    </p>
+    <h1>
+        <output type="string" id="romanNumeral" />
+        <script type="text/javascript">
+            document.addEventListener("keypress", function onEvent(event) {
+                if (event.keyCode === 13) {
+                    generateNumeral()
+                }
+            });
+        </script>
+    </h1>
+    <p style="background-color:orange;width:100%;height:50%;"></p>
+    <footer style="background-color:orange;color:ghostwhite;">I hope you enjoyed the Roman Numeral Generator!</footer>
+</body>
+</html>
